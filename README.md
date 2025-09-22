@@ -1,4 +1,4 @@
-## 📊 Architecture Diagram
+##  Architecture Diagram
 [![ECS Logs Architecture](assets/architecture.png)](assets/architecture.png)
 
 

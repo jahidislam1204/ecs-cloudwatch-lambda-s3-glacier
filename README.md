@@ -1,2 +1,14 @@
-# ecs-cloudwatch-lambda-s3-glacier
-This project demonstrates how to automatically export Amazon ECS container logs (from CloudWatch Logs) into an Amazon S3 bucket for long-term storage and archival. The solution uses an AWS Lambda function triggered by a CloudWatch Logs subscription filter to decode, process, and upload logs into S3 in JSON format.
+#  Export ECS Logs from CloudWatch to Amazon S3 (with Lambda & Glacier)
+
+This project shows how to stream ECS container logs from **CloudWatch Logs** → **AWS Lambda** → **Amazon S3** and then archive them to **Glacier** automatically.
+
+
+**WorkFlow**
+
+Workflow: ECS → CloudWatch → Lambda → S3 → Glacier
+
+##  Steps to Set Up
+
+### 1. ECS Service Logging
+- ECS service name: `demo-staging`
+- Logs pushed into CloudWatch Logs:

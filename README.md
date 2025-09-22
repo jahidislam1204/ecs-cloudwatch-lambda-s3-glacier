@@ -1,3 +1,7 @@
+## 📊 Architecture Diagram
+[![ECS Logs Architecture](assets/architecture.png)](assets/architecture.png)
+
+
 #  Export ECS Logs from CloudWatch to Amazon S3 (with Lambda & Glacier)
 
 This project demonstrates how to automatically **stream ECS container logs** from **Amazon CloudWatch Logs** → **AWS Lambda** → **Amazon S3**, and then archive them into **Amazon S3 Glacier** for long-term, low-cost storage.  

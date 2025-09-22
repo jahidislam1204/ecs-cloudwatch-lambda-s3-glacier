@@ -9,3 +9,11 @@
 - Function name: `ExportECSLogsToS3`
 - Runtime: `Python 3.13`
 - Memory: `128 MB`
+
+
+### Create a CloudWatch Subscription Filter
+
+  - Source: /ecs/demo-staging log group
+  - Destination: ExportECSLogsToS3 Lambda function
+  - Filter name: DemoStagingToS3
+  - Filter pattern: leave empty (matches all logs)

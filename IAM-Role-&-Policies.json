@@ -1,0 +1,13 @@
+{
+  "Effect": "Allow",
+  "Action": [
+    "s3:PutObject",
+    "s3:PutObjectAcl",
+    "s3:ListBucket",
+    "s3:GetBucketLocation"
+  ],
+  "Resource": [
+    "arn:aws:s3:::demo-staging",
+    "arn:aws:s3:::demo-staging/*"
+  ]
+}
